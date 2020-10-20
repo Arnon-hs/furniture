@@ -1,0 +1,15 @@
+﻿<Window x:Class="FurnitureOrder.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FurnitureOrder"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="830" Width="1500">
+    <Grid Background="#FF212226">
+        <Frame x:Name="MainFrame" HorizontalAlignment="Left" Height="617" Margin="0,174,0,0" VerticalAlignment="Top" Width="1500" NavigationUIVisibility="Hidden"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="1573" Height="139" Margin="0,0,-79.4,0" Background="#FF6D318E"/>
+        <TextBlock HorizontalAlignment="Left" Margin="111,10,0,0" TextWrapping="Wrap" Text="Мебель" TextAlignment="Center" VerticalAlignment="Top" Height="98" Width="209" FontSize="30" Foreground="White"/>
+        <Button x:Name="logOut" Content="Выход" FontSize="20" HorizontalAlignment="Left" Margin="1259,39,0,0" VerticalAlignment="Top" Width="225" Height="58" Background="{x:Null}" Foreground="White" Click="AuthorizationPageClick"/>
+    </Grid>
+</Window>

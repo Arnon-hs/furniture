@@ -1,0 +1,28 @@
+﻿<Page x:Class="FurnitureOrder.Pages.ReferenceBook"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FurnitureOrder.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="617" d:DesignWidth="1500"
+      Title="ReferenceBook">
+
+    <Grid>
+        <ListView Name="records" Margin="27,38,390,43" >
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Width="100" DisplayMemberBinding="{Binding Path=vendorCode}">артикул</GridViewColumn>
+                    <GridViewColumn Width="140" DisplayMemberBinding="{Binding Path=name}">Наименование</GridViewColumn>
+                    <GridViewColumn Width="170" DisplayMemberBinding="{Binding Path=quantity}">Количество</GridViewColumn>
+                    <GridViewColumn Width="170" DisplayMemberBinding="{Binding Path=unit}">Еденицы измерения</GridViewColumn>
+                    <GridViewColumn Width="170" DisplayMemberBinding="{Binding Path=price}">Закупочная цена</GridViewColumn>
+                    <GridViewColumn Width="170" DisplayMemberBinding="{Binding Path=mainProvider}">Основной поставщик</GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <TextBlock x:Name="AllPosition" Margin="1158,63,-42,457.8" Foreground="White"></TextBlock>
+        <TextBlock x:Name="AllRecords" Margin="1158,343,-42,176.8" Foreground="White"></TextBlock>
+        <TextBlock x:Name="AllPrice" Margin="1158,187,-42,315.8" Foreground="White"></TextBlock>
+    </Grid>
+</Page>

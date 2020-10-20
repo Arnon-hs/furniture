@@ -1,0 +1,17 @@
+﻿<Page x:Class="FurnitureOrder.Pages.Authorization"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FurnitureOrder.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="617" d:DesignWidth="1500"
+      Title="Authorization">
+
+    <Grid>
+        <Button  Content="Вход" FontSize="20" HorizontalAlignment="Left" Margin="100,50,0,0" VerticalAlignment="Top" Width="225" Height="58" Background="{x:Null}" Foreground="White" Click="LoginPageClick"/>
+        <Button  Content="Регистрация" FontSize="20" HorizontalAlignment="Left" Margin="400,50,0,0" VerticalAlignment="Top" Width="225" Height="58" Background="{x:Null}" Foreground="White" Click="RegistrationPageClick"/>
+        <Frame x:Name="AuthotizationFrame" Margin="100,140,50, 0" Width="1400" Height="470"></Frame>
+
+    </Grid>
+</Page>
